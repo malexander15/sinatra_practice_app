@@ -5,4 +5,8 @@
 
 <small>Office hours are 9am to 6pm</small>
 
-<button type="button" onclick="alert('Hello World!')">Click Me!</button>
+<button type="button" 
+	onclick="<% 
+		if params[:appt] < 09:00 && params[:appt] > 18:00 alert("Please pick a time between 9 a.m. and 6 p.m.")
+		else method="POST" action="/appt"%>">
+			Submit!</button>
