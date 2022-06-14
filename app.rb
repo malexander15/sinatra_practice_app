@@ -5,15 +5,16 @@ get '/' do
   erb :index
 end
 
-post '/schedule' do
-  scheduler = Scheduler.new(params['start_time'], params['end_time']
-  if scheduler.schedule_meeting
-    redirect_to '/view_schedule'
-  else
-    redirect_to '/', locals: {flash_message: "Unable to create meeting. Scheduling conflict." }
-  end 
+get '/new_lesson' do
+ 
 end
 
-get '/view_schedule' do
-  scheduler = Schedule.full_schedule
+post '/grade_lesson' do
+end
+
+get '/lesson_results' do
+
+end
+
+post '/schedule' do
 end
