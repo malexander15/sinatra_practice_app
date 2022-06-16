@@ -1,6 +1,6 @@
 require 'sinatra'
-require_relative 'scheduler'
-require_relative 'schedule'
+# require_relative 'scheduler'
+# require_relative 'schedule'
 get '/' do
   erb :index
 end
